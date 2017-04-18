@@ -1,1 +1,40 @@
-{     "devDependencies": {         "grunt-express-server": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-grunt-express-server",     "homepage": "https://github.com/npmtest/node-npmtest-grunt-express-server",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-grunt-express-server.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [grunt-express-server (v0.5.3)](https://github.com/ericclemmons/grunt-express-server) [![npm package](https://img.shields.io/npm/v/npmtest-grunt-express-server.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-express-server) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-express-server.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-express-server)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "grunt-express-server": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-grunt-express-server",
+    "keywords": [
+        "coverage",
+        "test",
+        "grunt-express-server"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_grunt_express_server.js",
+    "name": "npmtest-grunt-express-server",
+    "nameAlias": "npmtest_grunt_express_server",
+    "nameOriginal": "npmtest-grunt-express-server",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-grunt-express-server.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
