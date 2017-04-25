@@ -1,4 +1,7 @@
-# test coverage for  [grunt-express-server (v0.5.3)](https://github.com/ericclemmons/grunt-express-server)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-express-server.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-express-server) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-express-server.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-express-server)
+# npmtest-grunt-express-server
+
+#### basic test coverage for  [grunt-express-server (v0.5.3)](https://github.com/ericclemmons/grunt-express-server)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-express-server.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-express-server) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-express-server.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-express-server)
+
 #### Grunt task for running an Express Server that works great with LiveReload + Watch/Regarde
 
 [![NPM](https://nodei.co/npm/grunt-express-server.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-express-server)
@@ -7,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-grunt-express-server/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-grunt-express-server/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-grunt-express-server/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-grunt-express-server/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-grunt-express-server/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-grunt-express-server/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-grunt-express-server/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-grunt-express-server/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-grunt-express-server/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-grunt-express-server/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-grunt-express-server/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-grunt-express-server/build/coverage.html/index.html)
 
@@ -93,7 +96,8 @@
     "scripts": {
         "test": "grunt"
     },
-    "version": "0.5.3"
+    "version": "0.5.3",
+    "bin": {}
 }
 ```
 
